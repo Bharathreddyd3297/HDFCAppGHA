@@ -34,9 +34,9 @@ jobs:
               run: dotnet publish HDFCApplication.csproj -c Release -o publish
             - name: show repo structure
               run: ls -R
-            # - name: Deploy to Azure Web App
-            #   uses: azure/webapps-deploy@v2
-            #   with:
-            #     app-name: hdfc-web-app098
-            #     package: publish
+            - name: Deploy to Azure Web App
+              uses: azure/webapps-deploy@v2
+              with:
+                app-name: hdfc-web-app098
+                package: publish
             
