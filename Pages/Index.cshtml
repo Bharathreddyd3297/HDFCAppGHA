@@ -1,10 +1,284 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "HDFC Bank - NetBanking";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <table width="100%" cellpadding="10">
+            <tr>
+                <td width="50%">
+                    <h2>HDFC BANK</h2>
+                    <small>We understand your world</small>
+                </td>
+
+                <td align="right">
+                    <a href="#">Help</a> |
+                    <a href="#">Contact Us</a> |
+                    <a href="#">Logout</a>
+                </td>
+            </tr>
+        </table>
+
+        <hr />
+
+        <!-- Navigation -->
+        <nav>
+            <a href="#">Home</a> |
+            <a href="#">Accounts</a> |
+            <a href="#">Cards</a> |
+            <a href="#">Payments</a> |
+            <a href="#">Transfers</a> |
+            <a href="#">Investments</a> |
+            <a href="#">Offers</a>
+        </nav>
+
+        <hr />
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <h1>Welcome, Customer</h1>
+
+        <p>
+            Last login: 19 August 2026, 07:45 AM
+        </p>
+
+        <hr />
+
+        <!-- Account Summary -->
+        <section>
+            <h2>Account Summary</h2>
+
+            <table border="1" cellpadding="12" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th>Account Type</th>
+                        <th>Account Number</th>
+                        <th>Available Balance</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Savings Account</td>
+                        <td>XXXX XXXX 4582</td>
+                        <td>₹ 1,25,450.75</td>
+                        <td>
+                            <a href="#">View Details</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Credit Card</td>
+                        <td>XXXX XXXX 7821</td>
+                        <td>₹ 45,000 Available</td>
+                        <td>
+                            <a href="#">View Card</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <br />
+
+        <!-- Quick Actions -->
+        <section>
+            <h2>Quick Actions</h2>
+
+            <table border="1" cellpadding="15" cellspacing="0" width="100%">
+                <tr>
+                    <td align="center">
+                        <h3>Money Transfer</h3>
+                        <p>Transfer money to your account or beneficiary.</p>
+                        <a href="#">Transfer Money</a>
+                    </td>
+
+                    <td align="center">
+                        <h3>Pay Bills</h3>
+                        <p>Pay electricity, mobile, broadband and other bills.</p>
+                        <a href="#">Pay Bills</a>
+                    </td>
+
+                    <td align="center">
+                        <h3>Recharge</h3>
+                        <p>Recharge your mobile or other services.</p>
+                        <a href="#">Recharge</a>
+                    </td>
+
+                    <td align="center">
+                        <h3>Statement</h3>
+                        <p>View and download your account statement.</p>
+                        <a href="#">View Statement</a>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <br />
+
+        <!-- Recent Transactions -->
+        <section>
+            <h2>Recent Transactions</h2>
+
+            <table border="1" cellpadding="10" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Description</th>
+                        <th>Reference</th>
+                        <th>Debit</th>
+                        <th>Credit</th>
+                        <th>Balance</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>19 Aug 2026</td>
+                        <td>UPI Payment</td>
+                        <td>UPI458921</td>
+                        <td>₹ 1,250.00</td>
+                        <td>-</td>
+                        <td>₹ 1,25,450.75</td>
+                    </tr>
+
+                    <tr>
+                        <td>18 Aug 2026</td>
+                        <td>Salary Credit</td>
+                        <td>SAL458210</td>
+                        <td>-</td>
+                        <td>₹ 65,000.00</td>
+                        <td>₹ 1,26,700.75</td>
+                    </tr>
+
+                    <tr>
+                        <td>17 Aug 2026</td>
+                        <td>ATM Withdrawal</td>
+                        <td>ATM782145</td>
+                        <td>₹ 5,000.00</td>
+                        <td>-</td>
+                        <td>₹ 61,700.75</td>
+                    </tr>
+
+                    <tr>
+                        <td>16 Aug 2026</td>
+                        <td>Electricity Bill</td>
+                        <td>BILL852014</td>
+                        <td>₹ 2,450.00</td>
+                        <td>-</td>
+                        <td>₹ 66,700.75</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>
+                <a href="#">View All Transactions</a>
+            </p>
+        </section>
+
+        <br />
+
+        <!-- Credit Card -->
+        <section>
+            <h2>Credit Card Summary</h2>
+
+            <table border="1" cellpadding="12" cellspacing="0" width="100%">
+                <tr>
+                    <th>Card</th>
+                    <th>Outstanding</th>
+                    <th>Available Limit</th>
+                    <th>Payment Due Date</th>
+                    <th>Action</th>
+                </tr>
+
+                <tr>
+                    <td>HDFC Bank Credit Card **** 7821</td>
+                    <td>₹ 12,450</td>
+                    <td>₹ 45,000</td>
+                    <td>25 Aug 2026</td>
+                    <td>
+                        <a href="#">Pay Now</a>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <br />
+
+        <!-- Offers -->
+        <section>
+            <h2>Featured Offers</h2>
+
+            <table border="1" cellpadding="15" cellspacing="0" width="100%">
+                <tr>
+                    <td>
+                        <h3>Personal Loan</h3>
+                        <p>Explore personal loan options and offers.</p>
+                        <a href="#">Know More</a>
+                    </td>
+
+                    <td>
+                        <h3>Credit Card Offers</h3>
+                        <p>Explore available credit card benefits.</p>
+                        <a href="#">Explore</a>
+                    </td>
+
+                    <td>
+                        <h3>Fixed Deposit</h3>
+                        <p>Explore fixed deposit investment options.</p>
+                        <a href="#">Open FD</a>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <br />
+
+        <!-- Security Information -->
+        <section>
+            <h2>Security Tips</h2>
+
+            <ul>
+                <li>Never share your password, PIN or OTP with anyone.</li>
+                <li>Always access banking services through the official website or application.</li>
+                <li>Do not click suspicious links received through email or SMS.</li>
+                <li>Always log out after completing your banking session.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <hr />
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Terms & Conditions</a> |
+            <a href="#">Security</a> |
+            <a href="#">Contact Us</a>
+        </p>
+
+        <p>
+            © 2026 HDFC Bank. This is a demo interface for educational purposes.
+        </p>
+    </footer>
+
+</body>
+</html>
